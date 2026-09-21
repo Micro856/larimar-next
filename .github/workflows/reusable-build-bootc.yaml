@@ -60,6 +60,8 @@ jobs:
         env:
           PLATFORMS: "${{ inputs.platforms }}"
         run: |
+          echo "IMAGE_REGISTRY=${IMAGE_REGISTRY,,}" >> $GITHUB_OUTPUT
+          echo "IMAGE_NAME=${IMAGE_NAME,,}" >> $GITHUB_OUTPUT
           MATRIX="{\"include\":[]}"
           for platform in $(tr ',' ' ' <<< "${PLATFORMS}") ; do
             MATRIX="$(jq -c ".include += [{\"platform\": \"${platform}\"}]" <<< "${MATRIX}")"
