@@ -1,3 +1,0 @@
-[submodule "subprojects/arch-bootc-pkgs"]
-	path = subprojects/arch-bootc-pkgs
-	url = https://github.com/hecknt/arch-bootc-pkgs.git
