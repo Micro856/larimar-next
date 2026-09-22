@@ -23,7 +23,8 @@ iterate-bootc:
 build: build-ostree
 
 build-ostree:
-    mkosi -B --debug-shell -profile=
+    #mkosi -B --debug-shell --profile=
+    mkosi -B --debug-shell
 
 build-sysupdate:
     mkosi -B --debug-shell --profile=base,base-desktop,sysupdate,brew,base
