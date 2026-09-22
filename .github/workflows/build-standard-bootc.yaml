@@ -7,6 +7,10 @@ permissions:
 
 on:
   push:
+    paths-ignore:
+      - "**/README.md"
+      - "**/iso.toml"
+      - "**/.github/workflows/build-disk.yml"
   pull_request:
     branches:
       - main
