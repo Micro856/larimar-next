@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -xeuo pipefail
+
+rm -rf /usr/share/plymouth/themes/spinner/watermark.png
+
+ln -s /usr/share/pixmaps/system-logo-white.png /usr/share/plymouth/themes/spinner/bgrt-fallback.png
+
+plymouth-set-default-theme bgrt

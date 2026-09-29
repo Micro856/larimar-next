@@ -1,0 +1,2 @@
+# /usr/lib/bootc/kargs.d/20-plymouhth.toml
+kargs = ["quiet"]
