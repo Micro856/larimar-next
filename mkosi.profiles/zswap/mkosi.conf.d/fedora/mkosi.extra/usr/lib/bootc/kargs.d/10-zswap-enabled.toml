@@ -1,0 +1,2 @@
+# /usr/lib/bootc/kargs.d/10-zswap-enabled.toml
+kargs = ["zswap.enabled=1"]

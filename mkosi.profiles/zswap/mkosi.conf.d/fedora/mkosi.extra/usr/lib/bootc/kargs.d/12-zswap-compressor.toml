@@ -1,0 +1,2 @@
+# /usr/lib/bootc/kargs.d/12-zswap-compressor.toml
+kargs = ["zswap.compresor=lz4hc"]

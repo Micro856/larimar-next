@@ -1,0 +1,2 @@
+# /usr/lib/bootc/kargs.d/11-zswap-max-pool-percent.toml
+kargs = ["zswap.max_pool_percent=25"]
