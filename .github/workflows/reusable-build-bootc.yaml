@@ -117,7 +117,7 @@ jobs:
           if [ "$CI_MKOSI_RELEASE" != "" ] ; then
             RELEASE_ARGUMENTS+=("--release=$CI_MKOSI_RELEASE")
           fi
-          sudo mkosi -B -ff --debug --profile=base,bootc-ostree,gnome,${CI_MKOSI_PROFILES} ${PROFILE_ARGUMENTS} ${RELEASE_ARGUMENTS} --environment=GITHUB_TOKEN=${GITHUB_TOKEN}
+          sudo mkosi -B -ff --debug --profile=base,zswap,bootc-ostree,gnome,${CI_MKOSI_PROFILES} ${PROFILE_ARGUMENTS} ${RELEASE_ARGUMENTS} --environment=GITHUB_TOKEN=${GITHUB_TOKEN}
 
       - name: Load image
         id: load
