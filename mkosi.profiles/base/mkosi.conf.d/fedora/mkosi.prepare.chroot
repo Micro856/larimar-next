@@ -2,4 +2,4 @@
 
 set -xeuo pipefail
 
-dnf swap -y fedora-release-identity-basic generic-release
+dnf swap -y fedora-release generic-release
